@@ -1,0 +1,111 @@
+:root {
+    font-size: 16px;
+    font-family: Roboto, Inter, SF Pro, Segoe UI, Oxygen, Ubuntu, Helvetica Neue, Helvetica, Arial, sans-serif;
+
+    --cv-primary-color: #943735;
+    --cv-primary-darker-color: #632523;
+    --cv-primary-text-color: #fcfdfd;
+
+    --cv-secondary-color: #fdfdfd;
+    --cv-secondary-darker-color: #e6e6e9;
+    --cv-secondary-text-color: #222;
+}
+
+@page {
+    size: A4;
+    margin: 0;
+}
+@media print, html, body {
+    width: 210mm;
+    height: 297mm;
+}
+
+
+
+.cv-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 65mm auto;
+    grid-template-areas:
+            "header header header"
+            "left-column right-column right-column";
+
+    width: 210mm;
+    height: 297mm;
+    margin: 100px auto;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+}
+
+.header {
+    grid-area: header;
+
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+    border-bottom: var(--cv-primary-darker-color) 5px solid;
+    background-color: var(--cv-primary-color);
+    color: var(--cv-primary-text-color);
+}
+
+
+.portait {
+    border-radius: 50%;
+    aspect-ratio: 1/1;
+    height: 200px;
+
+    max-width: 300px;
+
+    display: block;
+    margin: 0 20px 0 0;
+}
+
+.summary {
+    flex-grow: 1;
+}
+
+.summary-block:not(:last-child) {
+    border-bottom: white;
+    border-bottom-width: 3px;
+    border-bottom-style: solid;
+
+    padding-bottom: 5mm;
+}
+
+h1, h2 {
+    margin: 2mm 0;
+}
+
+p {
+    margin: 0;
+}
+
+
+.left-column {
+    grid-area: left-column;
+    padding: 50px;
+    background-color: var(--cv-primary-color);
+    color: var(--cv-primary-text-color);
+}
+
+.right-column {
+    grid-area: right-column;
+    display: grid;
+    grid-template-columns: 100px 1fr;
+    grid-template-areas:
+    "side content";
+}
+
+.side {
+    grid-area: side;
+    background-color: var(--cv-secondary-darker-color);
+    color: var(--cv-secondary-text-color);
+}
+
+.content {
+    grid-area: content;
+    background-color: var(--cv-secondary-color);
+    color: var(--cv-secondary-text-color);
+}
+
