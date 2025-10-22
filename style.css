@@ -396,7 +396,8 @@ template {
     grid-template-rows: 65mm auto;
     grid-template-areas:
             "header header header"
-            "left-column right-column right-column";
+            "left-column right-column right-column"
+            "contact right-column right-column";
     width: 210mm;
     height: 297mm;
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
@@ -539,4 +540,8 @@ ul {
 .subtext {
     font-size: 12px;
     font-weight: 300;
+}
+
+.contact {
+    grid-area: contact;
 }
