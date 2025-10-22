@@ -34,14 +34,16 @@
     </header>
     <aside class="left-column">
         <h3 class="title">Compétences</h3>
-        <section class="section">
-            <article class="skills">
+        <section class="skills">
+            <article>
                 <h5>Langages</h5>
                 <ul>
                     <li>C/C++, Golang</li>
                     <li>JS (node.js, Vue3, React)</li>
                     <li>HTML, CSS</li>
                 </ul>
+            </article>
+            <article>
                 <h5>Outils</h5>
                 <ul>
                     <li>
@@ -50,6 +52,8 @@
                     <li>Jira, Open Project</li>
                     <li>Jetbrains IDE, Docker, VIM</li>
                 </ul>
+            </article>
+            <article>
                 <h5>Infrastructure</h5>
                 <ul>
                     <li>GNU Linux (Debian), Docker</li>
@@ -59,7 +63,8 @@
                     <li>Prometheus, Loki</li>
                     <li>Grafana, Uptime Kuma</li>
                 </ul>
-
+            </article>
+            <article>
                 <h5>Qualités</h5>
                 <ul>
                     <li>Curieux</li>
@@ -68,11 +73,31 @@
                 </ul>
             </article>
         </section>
+        <h3 class="title">Projets</h3>
+        <section class="projects">
+            <article style="margin-bottom: 8px;" class="text-justify">
+                Projet IoT Certification : réalisation d'un POC, détecteur de franchissement de feu piéton, avec Cloud
+                AWS.
+            </article>
+            <article class="text-justify">
+                Application de meteo : Interface WEB React, API node.js, mongodb, et cache Redis.
+            </article>
+        </section>
+        <h3 class="title">Langue</h3>
+        <section class="languages">
+            <article>
+                <p>Anglais : niveau B1 (TOEIC 695)</p>
+                <p style="color: transparent">-</p>
+                <p style="color: transparent">-</p>
+            </article>
+        </section>
     </aside>
     <main class="right-column">
         <div class="boxed-line">
             <div class="head" style="padding: 8px 0">
-                <span class="icon dark">X</span>
+                <span class="icon dark">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"><path d="M830.92-316.61v-264.93L480-391.15 64.08-618 480-844.85 896.92-618v301.39h-66ZM480-164.31 210-310.77v-178.08l270 146.47 270-146.47v178.08L480-164.31Z"/></svg>
+                </span>
             </div>
             <div class="content title">
                 <h3 style="margin: 0">Expériences professionnelles</h3>
@@ -134,7 +159,9 @@
         <div class="sep"></div>
         <div class="boxed-line">
             <div class="head" style="padding: 8px 0">
-                <span class="icon dark">X</span>
+                <span class="icon dark">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"><path d="M178.62-128q-38.35 0-64.48-26.14Q88-180.27 88-218.62v-388.76q0-38.35 26.14-64.48Q140.27-698 178.62-698H332v-55.39q0-38.34 26.14-64.47Q384.27-844 422.62-844h114.76q38.35 0 64.48 26.14Q628-791.73 628-753.39V-698h153.38q38.35 0 64.48 26.14Q872-645.73 872-607.38v388.76q0 38.35-26.14 64.48Q819.73-128 781.38-128H178.62ZM398-698h164v-55.39q0-9.23-7.69-16.92-7.69-7.69-16.93-7.69H422.62q-9.24 0-16.93 7.69-7.69 7.69-7.69 16.92V-698Z"/></svg>
+                </span>
             </div>
             <div class="content title">
                 <h3 style="margin: 0">Formations</h3>
@@ -178,21 +205,18 @@
             </div>
         </div>
     </main>
-    <article class="contact">
-        WIP
-        <div>
-            <h3>Langue</h3>
-            <p>Anglais : niveau B1 (TOEIC 695)</p>
-        </div>
-        <h3>Contact</h3>
-        <address>
-            <a href="mailto:alexis@devleeschauwer.fr">alexis@devleeschauwer.fr</a>
-            <a href="tel:0600000000">0600000000</a>
-            <p>66000 Perpignan</p>
-            <p>26 ans</p>
-        </address>
-    </article>
-
+    <section class="contact">
+        <article style="align-self: end;">
+            <div style="background: #7e7e7e; color: white; border-radius: 6px; margin: 0 auto; width: fit-content; padding: 6px 28px;">
+                <p style="margin: 0">Contact</p>
+            </div>
+            <address style="text-align: center">
+                <p><a href="mailto:alexis@devleeschauwer.fr">alexis@devleeschauwer.fr</a></p>
+                <p>66000 Perpignan</p>
+                <p>26 ans</p>
+            </address>
+        </article>
+    </section>
 </div>
 </body>
 </html>
