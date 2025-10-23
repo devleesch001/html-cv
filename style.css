@@ -490,6 +490,7 @@ ul {
     padding: 4px;
     width: 70%;
     color: var(--cv-primary-inversed-text-color);
+    margin: 8px 0;
 }
 
 .skills {
@@ -516,7 +517,7 @@ ul {
 }
 
 .right-column > .sep {
-    border: var(--cv-secondary-darker-color) 4px solid;
+    border: var(--cv-secondary-darker-color) 2px solid;
 }
 
 .boxed-line {
@@ -564,7 +565,7 @@ ul {
 .contact {
     grid-area: contact;
     display: grid;
-    height: 128px;
+    height: 126px;
     margin-top: -40px;
 }
 
