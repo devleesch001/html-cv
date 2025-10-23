@@ -361,6 +361,12 @@ address {
     font-size: 16px;
     font-family: Roboto, Inter, SF Pro, Segoe UI, Oxygen, Ubuntu, Helvetica Neue, Helvetica, Arial, sans-serif;
 
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings:
+            "wdth" 100;
+
     --cv-primary-color: #943735;
     --cv-primary-darker-color: #632523;
     --cv-primary-text-color: #fcfdfd;
